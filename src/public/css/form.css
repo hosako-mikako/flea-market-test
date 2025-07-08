@@ -1,0 +1,349 @@
+/* 認証コンテナ */
+.auth-container, 
+.form-container {
+    width: 100%;
+    max-width: 680px;
+    min-height: 656px;
+    margin: 118px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.auth-title, 
+.form-title {
+    min-width: 144px;
+    height: 46px;
+    margin: 0 auto 51px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+}
+
+/* フォームグルーブ */
+
+.form-group {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #000000;
+}
+
+/* フォーム入力フィールド */
+.form-input {
+    width: 100%;
+    height: 57px;
+    padding: 0 15px;
+    border: 1px solid #5F5F5F;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+/* フォーカス状態 */
+.form-input:focus {
+    outline: none;
+    border-color: #FF5555;
+    box-shadow: 0 0 0 2px rgba(255, 85, 85, 0.2);
+}
+
+/* エラー状態 */
+.form-input.error {
+    border-color: #dc3545;
+}
+
+/* エラーメッセージ */
+.error-message {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #FF5555;
+}
+
+.current-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 画像アップロード */
+.image-upload-section {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    
+}
+
+.image-preview-container {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.profile-preview,
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-placeholder {
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.image-input {
+    display: none;
+}
+
+.upload-btn {
+    width: 179px;
+    height: 49px;
+    padding: 10px;
+    color: #FF5555;
+    background-color: transparent;
+    border: 2px solid #FF5555;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #FF5555;
+    color: #FFFFFF;
+}
+
+/* ボタンコンポーネント */
+
+.form-actions {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-btn,
+.form-submit-btn {
+    width: 100%;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF5555;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover,
+.form-submit-btn:hover {
+    background-color: #e04545;
+}
+
+.auth-btn:active, 
+.form-submit-btn:active {
+    background-color: #cc3333;
+}
+
+/* リンクコンポーネント */
+
+.auth-links {
+    width: 100%;
+    max-width: 257px;
+    height: 53px;
+    margin: 19px auto 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-link {
+    width: 100%;
+    height: 53px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #0073CC;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+    color: #005aa3;
+    text-decoration: underline;
+}
+
+
+/* レスポンシブデザイン */
+
+/* PC対応（1400-1540px） */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .auth-container {
+        max-width: 720px;
+        margin-top: 140px;
+        padding: 0 30px;
+    }
+
+    .auth-title {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+
+    .form-label {
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 12px;
+    }
+
+    .form-input {
+        height: 62px;
+        font-size: 26px;
+        padding: 0 20px;
+    }
+
+    .auth-btn {
+        height: 70px;
+        font-size: 28px;
+    }
+
+    .form-actions {
+        margin-top: 90px;
+    }
+
+    .auth-link {
+        font-size: 22px;
+    }
+
+    .error-message {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        color: #FF5555;
+        width: 300px;
+    }
+
+    /* 画像アップロード（PC対応） */
+    .image-upload-section {
+        gap: 50px;
+    }
+
+    .current-image,
+    .profile-preview,
+    .profile-placeholder {
+        width: 170px;
+        height: 170px;
+    }
+
+    .upload-btn {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+}
+
+/* タブレット対応（768-850px） */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .auth-container {
+        max-width: 720px;
+        margin-top: 80px;
+        padding: 0 25px;
+    }
+
+    .auth-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .form-group {
+        width: 650px;
+        margin-bottom: 20px;   
+    }
+
+    .form-label {
+        font-size: 22px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+
+    .form-input {
+        height: 52px;
+        font-size: 22px;
+        padding: 0 12px;
+    }
+
+    .auth-btn {
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .form-actions {
+        margin-top: 60px;
+    }
+
+    .auth-link {
+        font-size: 18px;
+    }
+
+    .error-message {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+        color: #FF5555;
+        width: 300px;
+    }
+
+    /* 画像アップロード（タブレット対応） */
+    .image-upload-section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .current-image,
+    .profile-preview,
+    .profile-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+
+    .upload-btn {
+        width: 160px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+

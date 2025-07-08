@@ -1,0 +1,157 @@
+/* プロフィールヘッダー */
+.profile-header {
+    max-width: 1017px;
+    height: 150px;
+    margin-top: 78px;
+    margin-left: 299px;
+}
+
+.profile-info {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.profile-placeholder {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    min-width: 250px;
+    height: 65px;
+    margin-left: 57px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: #000000;
+}
+
+.profile-edit-btn {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 59px;
+    margin-left: 250px;
+    padding: 0 35px;
+    color: #FF5555;
+    border: 2px solid #FF5555;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.profile-edit-btn:hover {
+    background-color: #FF5555;
+    color: #ffffff;
+}
+
+/* === PC対応 (1400-1540px) === */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .profile-header {
+        max-width: 900px;
+        height: 130px;
+        margin-top: 65px;
+        margin-left: 250px;
+    }
+
+    .profile-image,
+    .profile-placeholder {
+        width: 130px;
+        height: 130px;
+        font-size: 18px;
+    }
+
+    .profile-name {
+        min-width: 220px;
+        height: 55px;
+        margin-left: 70px;
+        font-size: 32px;
+    }
+
+    .profile-edit-btn {
+        width: 280px;
+        height: 52px;
+        margin-left: 150px;
+        padding: 0 30px;
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .profile-header {
+        max-width: 100%;
+        height: auto;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0 25px;
+    }
+
+    .profile-info {
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile-image,
+    .profile-placeholder {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        margin-left: 50px;
+    }
+
+    .profile-name {
+        min-width: auto;
+        height: auto;
+        margin-left: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .profile-edit-btn {
+        width: 220px;
+        height: 45px;
+        margin-left: 0;
+        padding: 0 20px;
+        font-size: 18px;
+        margin-left: 150px;
+    }
+}
+
+

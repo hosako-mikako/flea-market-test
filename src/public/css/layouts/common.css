@@ -1,0 +1,260 @@
+/* リセット・基本スタイル */
+body,
+html {
+    font-family: 'Inter', sans-serif;
+    min-height: 600px;
+    max-width: 1512px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* レイアウトコンポーネント */
+.header {
+    background-color: #000000;
+    color: white;
+    padding: 0;
+}
+
+.header-container {
+    max-width: 1512px;
+    width: 100%;
+    min-width: auto;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    min-height: calc(100vh - 80px);
+}
+
+/* ヘッダーコンポーネント */
+
+/* ロゴ */
+.logo-image {
+    width: 370px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* 検索フォーム */
+.search-form {
+    width: 563px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.search-bar {
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 330px;
+    height: 29px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* ナビゲーション */
+.nav-links {
+    width: 463px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 1;
+    margin-left: 11px;
+}
+
+/* ナビゲーションリンク - 共通スタイル */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* ナビゲーションリンク - 個別スタイル */
+.nav-link:nth-child(1),
+.nav-link:nth-child(2) {
+    width: 135px;
+    height: 47px;
+}
+
+.nav-link:nth-child(3) {
+    width: 100px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logout-btn {
+    background-color: transparent;
+}
+
+/* アラートコンポーネント */
+.alert {
+    padding: 12px 20px;
+    margin: 20px auto;
+    max-width: 680px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* レスポンシブデザイン（ヘッダー対応）*/
+
+/* PC対応 (1400-1540px) */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .header-container {
+        max-width: auto;
+        padding: 0 30px;
+        gap: 15px;
+    }
+
+    /* ロゴサイズ調整 */
+    .logo-image {
+        width: 320px;
+        height: 32px;
+    }
+
+    /* 検索フォーム調整 */
+    .search-form {
+        width: 480px;
+        flex-shrink: 1;
+    }
+
+    .search-bar {
+        width: 420px;
+        height: 48px;
+    }
+
+    .search-input {
+        width: 300px;
+        font-size: 22px;
+    }
+
+    /* ナビゲーション調整 */
+    .nav-links {
+        width: 400px;
+        gap: 8px;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+
+    .nav-link:nth-child(1),
+    .nav-link:nth-child(2) {
+        width: 122px;
+        height: 44px;
+    }
+
+    .nav-link:nth-child(3) {
+        width: 90px;
+        height: 46px;
+    }
+}
+
+/* タブレット対応 (768-851px) */
+@media screen and (min-width: 768px) and (max-width: 851px) {
+    
+    .header-container {
+        max-width: 851px;
+        padding: 0 15px;
+        gap: 5px;
+    }
+
+    /* ロゴサイズ調整 */
+    .logo-image {
+        width: 180px;
+        height: 22px;
+    }
+
+    /* 検索フォーム調整 */
+    .search-form {
+        width: 260px;
+        flex-shrink: 1;
+    }
+
+    .search-bar {
+        width: 240px;
+        height: 40px;
+        padding-left: 12px;
+    }
+
+    .search-input {
+        width: 180px;
+        font-size: 16px;
+    }
+
+    /* ナビゲーション調整 */
+    .nav-links {
+        width: 250px;
+        gap: 4px;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .nav-link:nth-child(1),
+    .nav-link:nth-child(2) {
+        width: 90px;
+        height: 36px;
+    }
+
+    .nav-link:nth-child(3) {
+        width: 55px;
+        height: 38px;
+        margin-left: 5px;
+    }
+
+    /* アラート調整 */
+    .alert {
+        max-width: 90%;
+        margin: 15px auto;
+        font-size: 14px;
+    }
+}
+
