@@ -86,6 +86,8 @@ php artisan db:seed
 - パスワード: laravel_pass
 
 ## **ER図**
-https://github.com/user-attachments/assets/a99e417f-460d-4ad2-bf43-017e46742471
+
+![ER図](./images/er-diagram.png)
+
 
 
