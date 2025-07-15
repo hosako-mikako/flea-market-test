@@ -1,7 +1,7 @@
 # **フリマアプリ**
 
 ## **概要**
-フリマアプリケーションです。Laravel Framework 8.83.8 + PHP 7.4.9 + MySQL 8.0.26 + Docker環境で構築されています。
+フリマアプリケーションです。Laravel Framework 8.83.8 + PHP 8.1.33 (旧: 7.4.9) + MySQL 8.0.26 + Docker環境で構築されています。
 
 ## **機能一覧**
 - 会員登録・ログイン・ログアウト（Laravel Fortify）
@@ -64,12 +64,16 @@ php artisan db:seed
 
 
 ## **使用技術（実行環境）**
-- PHP: 7.4.9
+- PHP: 8.1.33 (旧: 7.4.9)
 - Laravel: 8.83.8
 - MySQL: 8.0.26
 - Docker: Docker Compose使用
 - 認証: Laravel Fortify
 - フロントエンド: Blade, CSS, JavaScript（Ajax）
+
+## 注意事項
+- PHP 8.1.33 使用に変更（Debian Buster サポート終了対応）
+- 環境構築時のDeprecation Warningは動作に影響ありません
 
 ## **URL**
 ### 開発環境
